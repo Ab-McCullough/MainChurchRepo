@@ -5,3 +5,6 @@ from django.http import HttpRequest
 
 def main_page(request: HttpRequest)->render:
     return render(request, 'index.html')
+def event_page(request: HttpRequest)->render:
+
+    return render(request, "events.html")

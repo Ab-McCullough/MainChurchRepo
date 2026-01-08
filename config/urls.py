@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from app.views import *
 urlpatterns = [
+    path("events", event_page, name="event"),
     path('', main_page, name='main'),
     path('admin/', admin.site.urls),
 ]
